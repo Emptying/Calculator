@@ -11,7 +11,7 @@ import org.javia.arity.SyntaxException;
 
 
 public class MainActivity extends AppCompatActivity {
-    //按钮id数组
+    //按钮id数组的
     private int[] id = new int[]{R.id.btn0, R.id.btn1, R.id.btn2, R.id.btn3, R.id.btn4, R.id.btn5, R.id.btn6, R.id.btn7,
             R.id.btn8, R.id.btn9, R.id.btnDel, R.id.btnC, R.id.btnAdd, R.id.btnLess, R.id.btnX, R.id.btnExc, R.id.btnPoint, R.id.btnEqual,R.id.btnPer};
     //按钮数组
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         } catch (SyntaxException e) {
             e.printStackTrace();
         }
-        tvResult.setText(""+result);
+        tvResult.setText(String.valueOf(result));
     }
     //按钮单击事件处理
 
